@@ -1,0 +1,18 @@
+spring:
+    datasource:
+    username: "root"
+    password: "mju7&UJM"
+    url: "jdbc:mysql://localhost:3306/auth_db"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+server:
+  port: 8081
+jwt:
+  secret: "this_is_my_secret_key_for_fundoo_notes_jwt_signing_2026"
+  expiration: 86400000
