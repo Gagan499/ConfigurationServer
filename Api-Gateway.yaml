@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes:
+            - id: auth-service
+              uri: http://localhost:8081
+              predicates:
+                - Path=/api/login,/api/register
+
+            - id: user-service
+              uri: http://localhost:8082
+              predicates:
+                - Path=/api/users/**
