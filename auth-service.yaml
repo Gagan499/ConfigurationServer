@@ -1,5 +1,5 @@
 spring:
-    datasource:
+  datasource:
     username: "root"
     password: "mju7&UJM"
     url: "jdbc:mysql://localhost:3306/auth_db"
