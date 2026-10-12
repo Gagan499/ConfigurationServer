@@ -8,6 +8,10 @@ spring:
               uri: http://localhost:8081
               predicates:
                 - Path=/api/login,/api/register
+            - id: user-service
+              uri: http://localhost:8082
+              predicates:
+                - Path=/api/users/**
 jwt:
   secret: "this_is_my_secret_key_for_fundoo_notes_jwt_signing_2026"
   expiration: 86400000
