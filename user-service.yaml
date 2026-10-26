@@ -13,3 +13,6 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
 server:
   port: 8082
+jwt:
+  secret: "this_is_my_secret_key_for_fundoo_notes_jwt_signing_2026"
+  expiration: 86400000
